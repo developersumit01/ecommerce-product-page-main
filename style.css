@@ -1,37 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
-main{
+
+main {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.logo ul li{
+
+.logo ul li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.logo ul{
+
+.logo ul {
     display: flex;
     height: 100%;
     align-items: center;
     font-size: 20px;
     gap: 20px;
 }
-.logo ul li a{
+
+.logo ul li a {
     font-weight: 600;
+    color: hsl(219, 9%, 45%);
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.nav{
+
+.nav {
     display: flex;
     width: 80%;
     height: 5rem;
@@ -39,47 +47,111 @@ a{
     align-items: center;
     border-bottom: 1px solid gray;
 }
-.cart{
+
+.cart {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.profile{
+
+.profile {
     display: flex;
     gap: 30px;
 }
-.profile-image img{
+
+.profile-image img {
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-logo{
+
+.main-logo {
     font-size: 40px;
     font-weight: 700;
 }
-.profile-image{
+
+.profile-image {
     display: flex;
     align-items: center;
 }
 
-.container{
+.container {
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 60px 50px 60px 50px;
+    gap: 50px;
     border: 1px solid red;
     height: 100vh;
 }
-.right{
+
+.right {
     width: 50%;
+    height: 100%;
+    padding: 50px;
 }
-.left{
+
+.left {
     width: 50%;
+    display: flex;
+    /* flex-shrink: 0; */
+    flex-direction: column;
+    gap: 25px;
 }
-.main-image img{
+
+.main-image img {
     /* height: 50vmin; */
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
 }
-.side-image img{
-    height: 10vh;
+
+.side-image img {
+    height: 13vh;
     border-radius: 5px;
+}
+
+.side-image {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-image {
+    padding: 20px;
+}
+
+.price {
+    display: flex;
+    gap: 20px px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart button{
+    height: 40px;
+    width: 250px;
+    gap: 15px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+}
+.buttons img,.buttons label{
+    cursor: pointer;
+}
+[type="button"]{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
